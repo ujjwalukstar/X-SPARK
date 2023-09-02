@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="starship.css">
+        <script src="https://kit.fontawesome.com/15995cc399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <title>X-SPARK</title>
+        <link rel="shortcut icon" type="image/x-icon" href="fevi.ico">
+        <style>
+            :root{
+    --tran : all 0.2s linear;
+}
+body{
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family:'Arial Narrow';
+    background-color: black;
+    color: white;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+#blog-header{
+    margin-top: -20px;
+    background-image: url(STARSHIP_SN15_Desktop.webp) !important;
+    height: 99vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.align_center{
+    text-align: center !important;
+}
+#navbarNav{
+    position: relative;
+    margin-top: 5vh;
+    left: 15vw;
+}
+#navbarNav li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#navbarNav li a{
+    color: white !important;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+#menu{
+    position: absolute;
+    top: 56px;
+    left: 87%;
+}
+
+.horizontal_lists{
+    text-align: center;
+}
+.horizontal_lists li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.horizontal_lists li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-size: 22px; */
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+#navbarNav li a{
+    padding-bottom: 1px !important;
+}
+a{
+    position: relative;
+}
+a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-in-out;
+}
+a:hover:before{
+    width: 100%;
+
+}
+#header-div{
+    color: white;
+    position: relative;
+    top: 65%;
+    left: 10%;
+}
+#header-div button{
+    font-size: 22px;
+    border-radius: 0px;
+}
+button{
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    transition: var(--tran);
+    overflow: hidden;
+}
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: var(--tran);
+}
+button:hover:before{
+    transform: translateY(0);
+    z-index: -1;
+}
+button:hover{
+    color: white;
+}
+#main-div1{
+    margin-top: -20px;
+    background-image: linear-gradient(to bottom right, gray , black 50%);
+    color: white;
+    height: 75vh;
+    font-size: 22px;
+    overflow: hidden;
+}
+#div-1{
+    padding-top: 100px;
+    display: inline-block;
+    padding-left: 65px;
+    padding-right: 10px;
+    width: 46%;
+    font-weight: 100;
+}
+#div-2{
+    vertical-align: top;
+    padding-top: 100px;
+    display: inline-block;
+    padding-right: 65px;
+    padding-left: 10px;
+    width: 44%;
+    font-weight: 100;
+}
+#main-div2{
+    height: 75vh;
+    background-image: url(WebsiteStarshipStack_Lines_Desktop.webp);
+    background-position: center;
+    background-size: cover;
+}
+#main-div2 p{
+    padding-left: 5vw;
+    margin-right: 5vw;
+    width: 45vw;
+    height: 75vh;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    position: relative;
+    top: 25%;
+}
+
+#div2_img{
+    display: inline-block;
+    width: 49vw;
+    margin: 0;
+    border: 0;
+}
+#div2_img img{
+    height: 75vh;
+    width: 50vw;
+}
+#main-div3{
+    background-image: url(https://www.aviationanalysis.net/wp-content/uploads/2021/10/After-the-rockets-SpaceX-will-send-a-factory-into-space.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+}
+#starship-update{
+    position: relative;
+    top: 70%;
+    left: 10%;
+}
+#youtube-logo a{
+    color: white;
+    opacity: 0.4;
+}
+#youtube-logo a i{
+    font-size: 50px;
+    position: relative;
+    left: 44%;
+    top: 20vh;
+}
+#main-div4{
+    font-size: 23px;
+    padding-left: 5%;
+    padding-top: 15%;
+    color: white;
+    background-image: url(https://www.teslarati.com/wp-content/uploads/2019/10/Starship-2019-SpaceX-ISS-docked-1.gif);
+    background-position: center;
+    background-size: cover;
+    height: 70vh !important;
+    width: 100vw;
+}
+#main-div4 p{
+    padding-left: 5%;
+    padding-right: 60%;
+}
+#main-div5{
+    background-image: url(https://user-images.githubusercontent.com/70452537/114315199-b5a3ad80-9af5-11eb-87a1-a169377409e4.gif);
+    font-size: 23px;
+    padding-left: 5%;
+    padding-top: 15%;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    height: 70vh !important;
+    width: 100vw;
+}
+#main-div5 p{
+    padding-left: 5%;
+    padding-right: 60%;
+}
+#main-div6{
+    background-image: url(https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=49127.0;attach=1585522;image);
+    font-size: 23px;
+    padding-left: 5%;
+    padding-top: 15%;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    height: 70vh !important;
+    width: 100vw;
+}
+#main-div6 p{
+    padding-left: 5%;
+    padding-right: 60%;
+}
+#main-div7{
+    background-image: url(https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=49127.0;attach=1585516;image);
+    font-size: 23px;
+    padding-left: 5%;
+    padding-top: 15%;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    height: 70vh !important;
+    width: 100vw;
+}
+#main-div7 p{
+    padding-left: 5%;
+    padding-right: 60%;
+}
+#main-div8{
+    background-image: url(https://techcrunch.com/wp-content/uploads/2020/12/mars_landing.jpg);
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    padding-top: 20px;
+}
+#main-div8 p{
+    width: 40vw;
+    position: relative;
+    left: 55%;
+    padding-right: 10%;
+}
+#main-div8 button{
+    font-size: 22px;
+    color: solid white;
+    margin-left: 55%;
+}
+#main-div8 h1{
+    padding-left: 55%;
+}
+#main-div8 button{
+    padding: 15px; 
+    color: white; 
+    border: 1px solid white; 
+    background-color: black;
+}
+#div9-img{
+    display: inline-block;
+    width: 50vw;
+    height: 100%;
+}
+#main-div9{
+    background-image: url(Raptor.webp);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    font-size: 20px;
+}
+#div9-content{
+    line-height: 1.5;
+    padding-top: 5vh;
+    margin-left: 5%;
+    padding-right: 1%;
+    vertical-align: top;
+    padding-top: 50px;
+    color: white;
+    display: inline-block;
+    width: 40vw;
+    height: 100%;
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+#div3-content-3{
+    position: relative;
+    top: 30%;
+    line-height: 2;
+    padding-top: 5vh;
+    margin-left: 8%;
+    padding-right: 5%;
+    vertical-align: top;
+    padding-top: 50px;
+    color: white;
+    display: inline-block;
+    width: 40vw;
+    height: 100%;
+}
+#div3-content-3 p b{
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1px;
+    width: fit-content;
+}
+#div3-content-4{
+    position: relative;
+    top: 30%;
+    line-height: 2;
+    padding-top: 5vh;
+    margin-left: 8%;
+    padding-right: 5%;
+    vertical-align: top;
+    padding-top: 50px;
+    color: white;
+    display: inline-block;
+    width: 40vw;
+    height: 100%;
+}
+#div3-content-4 p b{
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1px;
+    width: fit-content;
+}
+#div3-content-1{
+    position: relative;
+    top: 30%;
+    line-height: 2;
+    padding-top: 5vh;
+    margin-left: 8%;
+    padding-right: 5%;
+    vertical-align: top;
+    padding-top: 50px;
+    color: white;
+    display: inline-block;
+    width: 40vw;
+    height: 100%;
+}
+#div3-content-1 p b{
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1px;
+    width: fit-content;
+}
+#div3-content-2{
+    position: relative;
+    top: 30%;
+    line-height: 2;
+    padding-top: 5vh;
+    margin-left: 8%;
+    padding-right: 5%;
+    vertical-align: top;
+    padding-top: 50px;
+    color: white;
+    display: inline-block;
+    width: 40vw;
+    height: 100%;
+}
+#div3-content-2 p b{
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1px;
+    width: fit-content;
+}
+#div9-content p b{
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1px;
+    width: fit-content;
+
+}
+
+#main-div10{
+    height: 80vh;
+    display: flex;
+}
+#div10-img{
+    background-image: url(https://cdn5.vedomosti.ru/image/2018/7f/1aenml/original-1o57.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: inline-block;
+    width: 60vw;
+}
+#div10-content{
+    padding-top: 10%;
+    width: 40vw;
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 21px;
+    padding-left: 2%;
+    padding-right: 5%;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to bottom right, gray , black 60%);
+}
+FOOTER{
+    height: 50vh;
+    border: 0;
+    padding: 0;
+    margin: -20px;
+    background-color: black;
+    color: white;
+}
+.horizontal-lists {
+    position: relative;
+    top: 60%;
+    height: 0;
+}
+.horizontal-lists li{
+    height: 0;
+    position: relative;
+    left: 30%;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    vertical-align: bottom;
+}
+.horizontal-lists li a{
+    text-decoration: none;
+    color: white;
+}
+#dropdownmenubutton1{
+    position: relative;
+    top: 47%;
+    height: 0;
+    width: 5%;
+    padding-left: 42%;
+    color: white;
+    background-color: black;
+    border-radius: 0px;
+}
+#social-section{
+    background-color: black;
+}
+#timeline-divider{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    height: 40%;
+    width: 0;
+    border: 1px solid white;
+}
+@media (max-width: 1358px){
+    body{
+        height: auto;
+    }
+    #blog-header{
+        overflow: scroll;
+    }
+    #main-div1{
+        height: auto;
+
+    }
+    #div-1{
+        display: block;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        width: auto;
+    }
+    #div-2{
+        display: block;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        width: auto;
+    }
+}
+@media (max-width:1150px){
+    #navbarNav{
+        position: relative;
+        margin-top: 5vh;
+        left: 5vw;
+    }
+    #navbarNav li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #navbarNav li a{
+        color: white !important;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+    #main-div2 p{
+        width: 100%;
+        padding-right: 10vw;
+    }
+    #div3-content-3 p{
+        width: 80vw;
+        padding-top: 15%;
+    }
+    #div3-content-1 p{
+        width: 80vw;
+        padding-top: 15%;
+    }
+    #div3-content-2 p{
+        width: 80vw;
+        padding-top: 15%;
+    }
+    #div3-content-4 p{
+        width: 80vw;
+        padding-top: 15%;
+    }
+    #main-div4 p{
+        width: 90vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+    }
+    #main-div5 p{
+        width: 90vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+    }
+    #main-div6 p{
+        width: 90vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+    }
+    #main-div7 p{
+        width: 90vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+    }
+    #main-div8{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    #main-div8 p{
+        position: relative;
+        left: 5%;
+        width: 100%;
+        padding-left: 5%;
+        padding-left: 5%;
+    }
+    #main-div8 button{
+        margin-left: 10%;
+        padding-left: 5%;
+    }
+    #main-div8 h1{
+        padding-left: 10%;
+    }
+    #div9-content{
+        width: 80vw;
+    }
+    #social-section li{
+        padding-left: 2px;
+        position: relative;
+        left: 0;
+    }
+    #main-div10{
+        display: block;
+        height: 80vh;
+    }
+    #div10-img{
+        height: 60%;
+        display: block;
+        width: 100%;
+    }
+    #div-3-content-1 p .firstspan {
+        margin-left: 5vw;
+    }
+    #div10-content{
+        display: block;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 5%;
+        width: 100%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <header id="blog-header">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="margin-top: 10px;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 1.4rem; ">
+                        <ul class="navbar-nav " >
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Falcon9.html">Falcon 9</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Falcon_Heavy.html">Falcon Heavy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dragon.html">Dragon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Starship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="human_spacelight.html">Human Spaceflight</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="Rideshare.html">Rideshare</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="year2008.html">Missions</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="Facilities.html">Facilities</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+            <div id="header-div">
+                <p>FLIGHT TEST</p>
+                <P><H1>STARSHIP SN15</H1></P>
+                <button onclick="location.href='https://youtu.be/z9eoubnO-pE'">REWATCH</button>
+            </div>
+        </header>
+        <main id="blog-main">
+            <div id="main-div1">
+                <div id="div-1">
+                    <p>On Wednesday, May 5, Starship serial number 15 (SN15) successfully completed SpaceX&apos;s fifth high-altitude flight test of a Starship prototype 
+                        from Starbase in Texas.</p> 
+                    <p>Similar to previous high-altitude flight tests of <a href="https://www.youtube.com/playlist?list=PLBQ5P5txVQr9_jeZLGa0n5EIYvsOJFAnY" target="_blank" style="color: white;"> Starship </a>, 
+                        SN15 was powered through ascent by three Raptor engines, each shutting down in sequence prior to the vehicle reaching apogee  approximately 10 km in altitude. SN15 
+                        performed a propellant transition to the internal header tanks, which hold landing propellant, before reorienting itself for reentry and a controlled aerodynamic descent.</p>
+                    <p>The Starship prototype descended under active aerodynamic control, accomplished by independent movement of two forward and two aft flaps on the vehicle. 
+                        All four flaps were actuated by an onboard flight computer to control Starship&apos;s attitude during flight and enabled precise landing at the intended 
+                        location. SN15&apos;s Raptor engines reignited as the vehicle performed the landing flip maneuver immediately before touching down for a nominal landing 
+                        on the pad.</p>
+                </div>
+                <div id="div-2">
+                    <p>These test flights of Starship are all about improving our understanding and development of a fully reusable transportation system designed to carry both 
+                        crew and cargo on long-duration interplanetary flights, and help humanity return to the Moon, and travel to Mars and beyond.</p>
+                    <p>Congratulations to the entire SpaceX team on SN15&apos;s successful flight and landing!</p>
+                </div>
+            </div>
+            <div id="main-div2">
+                <p>SpaceX&apos;s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship) represent a fully reusable transportation system designed to 
+                carry both crew and cargo to Earth orbit, the Moon, Mars and beyond. Starship will be the world&apos;s most powerful launch vehicle ever developed, with the 
+                ability to carry in excess of 100 metric tonnes to Earth orbit.
+                </p>
+            </div>
+            <div class="carousel" data-flickity='{ "Parallax": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell" style="height: 100vh; width: 100%; background-image: url(overview.webp); background-position: center; background-size: cover;">
+                    <DIV id="div3-content-1">
+                        <H1>OVERVIEW</H1>
+                        <p><b>HEIGHT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;120m /394ft </b></p>
+                        <p><b>DIAMETER&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;9m/30ft</b></p>
+                        <p><b>PAYLOAD TO LEO &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;100+t/220+Klb</b></p>
+                    </DIV>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%; background-image: url(starship.webp); background-position: center; background-size: cover;">
+                    <div id="div3-content-2">
+                        <H1>STARSHIP</H1>
+                        <P>Starship is the fully reusable spacecraft and second stage of the Starship system. It offers an integrated payload section and is capable of carrying passengers and cargo to Earth orbit, planetary destinations, and between destinations on Earth.</P>
+                        <p><b>HEIGHT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;;50m/160ft</b></p>
+                        <p><b>DIAMETER &emsp;&emsp;&emsp;9m/30ft</b></p>
+                        <p><b>PAYLOAD CAPACITY &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;100+t/220+klb</b></p>
+                        <p><b>PROPELLENT CAPACITY &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1200t/2.6Mlb</b></p>
+                    </div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%; background-image: url(superheavy.webp); background-position: center; background-size: cover;">
+                    <div id="div3-content-3">
+                        <H1>SUPER HEAVY</H1>
+                        <P>The first stage, or booster, of our next-generation launch system has a gross liftoff mass of over 3 million kg and uses sub-cooled liquid methane and liquid oxygen (CH4/LOX) propellants. The booster will return to land at the launch site on its 6 legs.</P>
+                        <p><b>DIAMETER&emsp;&emsp;&emsp;&9m/30ft</b></p>
+                        <p><b>HEIGHT &emsp;70m/230ft</b></p>
+                        <p><b>THRUST &emsp;&emsp;&emsp;&emsp;&emsp;72MN/16Mlbf</b></p>
+                        <p><b>PROPELLENT CAPACITY &emsp;&emsp;&emsp;3400t/6.8Mlb</b></p>
+                    </div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%; background-image: url(cargo.webp); background-position: center; background-size: cover;">
+                    <div id="div3-content-4">
+                        <H1>PAYLOAD</H1>
+                        <P>The Starship payload fairing is 9 m in diameter and 18 m high, resulting in the largest usable payload volume of any current or in development launcher. This payload volume can be configured for both crew and cargo.</P>
+                        <p><b>PAYLOAD VOLUME HEIGHT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;;&emsp;&emsp;&emsp;9m/30ft</b></p>
+                        <p><b>PAYLOAD FAIRING DIAMETER&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;70m/230ft</b></p>
+                        <p><b>PAYLOAD VOLUME &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1,100m3/38,800ft3</b></p>
+                        <p><b>USEFUL MASS &emsp;&emsp;&emsp;&emsp;&emsp;100+t/220+klb</b></p>
+                    </div>
+                </div>
+            </div>
+            <div id="main-div3">
+                <div style="color: white;" id="starship-update">
+                    <P style="font-size: 1.5rem;">EVENT</P>
+                    <H2 style="font-size: 3rem;">STARSHIP UPDATE</H2>
+                </div>
+                <div id="youtube-logo">
+                    <a href="https://youtu.be/sOpMrVnjYeY" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel" data-flickity='{ "Parallax": true, "autoPlay": false, "imagesLoaded":true }' style="height: 90vh;">
+                <div class="carousel-cell" style=" width: 100%;" id="main-div4">
+                    <p >STARSHIP USES</p>
+                    <h1 style="padding-left: 5%;">SPACE STATION</h1>
+                    <p>Starship can deliver both cargo and people to and from the ISS. Starship&apos;s fairing provides significant capacity for in-space activities. The aft cargo containers 
+                    can also host a variety of payloads.</p>
+                </div>
+                <div class="carousel-cell" style=" width: 100%;" id="main-div5">
+                    <p>STARSHIP USES</p>
+                    <H1 style="padding-left: 5%;">MOON MISSIONS</H1>
+                    <P>Developing bases to support future space exploration requires the transport of large amounts of cargo to the Moon for research and human spaceflight development. Starship is
+                     designed to carry these building blocks</P>
+                </div>
+                <div class="carousel-cell" style=" width: 100%;" id="main-div6">
+                    <p>STARSHIP USES</p>
+                    <H1 style="padding-left: 5%;">INTERPLANETARY TRANSPORT</H1>
+                    <P>Building cities on Mars will require affordable delivery of significant quantities of cargo and people. The fully reusable Starship system uses in-space propellant transfer 
+                    to achieve this and carry people on long-duration, interplanetary flights.</P>
+                </div>
+                <div class="carousel-cell" style=" width: 100%;" id="main-div7">
+                    <p>STARSHIP USES</p>
+                    <h1 style="padding-left: 5%;">SATELLITES</h1>
+                    <p>Starship is designed to deliver satellites further and at a lower marginal cost per launch than our current Falcon vehicles. With a payload compartment larger than any 
+                    fairing currently in operation or development, Starship creates possibilities for new missions, including space telescopes even larger than the James Webb</p>
+                </div>
+            </div>
+            <div id="main-div8">
+                <h1 >LANDING ON MARS</h1>
+                <P>Starship will enter Mars&apos;atmosphere at 7.5 kilometers per second and decelerate aerodynamically. The vehicle’s heat shield is designed to withstand multiple entries, 
+                but given that the vehicle is coming into Mars' atmosphere so hot, we still expect to see some ablation of the heat shield (similar to wear and tear on a brake pad). 
+                The engineering video below simulates the physics of Mars entry for Starship.</P>
+                <button onclick="location.href='https://youtu.be/5seefpjMQJI'" >WATCH SIMULATION</button>
+            </div>
+            <div id="main-div9">
+                <div id="div9-content">
+                    <p>ENGINES</p>
+                    <H1>RAPTOR</H1>
+                    <P>The Raptor engine is a reusable methalox staged-combustion engine that powers the Starship launch system. Raptor engines began flight testing on the Starship prototype 
+                        rockets in July 2019, becoming the first full-flow staged combustion rocket engine ever flown.</P>
+                    <p><b>DIAMETER&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;1.3m/4ft</b></p>
+                    <p><b>HEIGHT &emsp;&emsp;&emsp;&emsp;&emsp;3.1m/10.2ft</b></p>
+                    <p><b>THRUST &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;2MN/440klbf</b></p>
+                </div>
+            </div>
+            <div id="main-div10">
+                <div id="div10-img"></div>
+                <div id="div10-content">
+                    <h1>FIRST PRIVATE LUNAR MISSION</h1>
+                    <p>In 2023, Japanese entrepreneur Yusaku Maezawa and the crew of dearMoon will become the first civilian passengers on a lunar Starship mission, featuring a fly-by of the 
+                        Moon during their week-long journey. This flight is an important step toward enabling access for people who dream of traveling to space</p>
+                </div>
+            </div>
+            <div class="carousel" data-flickity='{ "Parallax": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                  <img class="w3-image" src="https://www.numerama.com/wp-content/uploads/2021/02/sn9-sn10-starship.jpg" style="height: 100%; width: 100%;">
+                  <div style="color: white; text-align: center;">Starship ready for flight test</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                  <img class="w3-image" style="height: 100%; width: 100%;" src="https://nintendo-power.com/wp-content/uploads/2021/08/Elon-Musk-proposes-to-land-Artemis-III-astronauts-on-the.jpg">
+                  <div style="color: white; text-align: center;">Starship in flight</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                  <img class="w3-image" style="height: 100%; width: 100%;" src="https://www.teslarati.com/wp-content/uploads/2021/05/Starship-SN15-10km-flight-test-050521-SpaceX-launch-1-edit-c.jpg">
+                  <div style="color: white; text-align: center;">Starship successfully lands</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="http://cdn.benchmark.pl/uploads/article/82357/MODERNICON/79b2be06dc73f5340b3d88e61a4560e5714a7089.jpg">
+                    <div style="color: white; text-align: center;">Three Raptor engines at the base of Starship</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="https://www.universetoday.com/wp-content/uploads/2019/09/Starship-2019-Mars-Moon-base-render-SpaceX-1-2000x1200.jpg">
+                    <div style="color: white; text-align: center;">Artist&apos;s rendering Starship taking off from Mars</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="https://www.teslarati.com/wp-content/uploads/2021/11/Starship-2021-SpaceX-render-1-crop.jpg">
+                    <div style="color: white; text-align: center;">Artist&apos;s rendering of Starship and Super Heavy in flight</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="https://www.teslarati.com/wp-content/uploads/2018/07/BFS-colony-on-Mars-SpaceX.jpg">
+                    <div style="color: white; text-align: center;"> Artist&apos;s rendering of a base on Mars with multiple Starships</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="https://spaceexplored.com/wp-content/uploads/sites/10/2020/10/Starship-Artist-Rendering.jpg">
+                    <div style="color: white; text-align: center;">Artist&apos;s rendering of Starship approaching Saturn and it's moons</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="STR_8.webp">
+                    <div style="color: white; text-align: center;">A musical concert onboard Starship</div>
+                </div>
+                <div class="carousel-cell" style="height: 100vh; width: 100%;">
+                    <img class="w3-image" style="height: 100%; width: 100%;" src="https://spacenews.com/wp-content/uploads/2019/06/30934147078_d3fc6602fb_k.jpg">
+                    <div style="color: white; text-align: center;">Super Heavy in flight</div>
+                </div>
+            </div>
+            <footer>
+                <div id="timeline-divider"></div>
+                <div style="position: relative; top: 43%; text-align: center;">
+                    <button onclick="location.href='https://www.spacex.com/media/starship_users_guide_v1.pdf'" style="border: 1px solid white; color: white; background-color: black;  border-radius: 0; font-size: 1.3rem; padding: 12px;">DOWNLOAD USER GUIDE</button>
+                </div>
+                <div class="dropdown" style="position: relative; text-align: center; top: 50%;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style=" font-size: 1.4rem; background-color: black; color: white; border-radius: 0; border: 1px solid white; !important">
+                      PRESENTATION
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <option>PRESENTATION</option>
+                      <li><a class="dropdown-item" href="https://www.spacex.com/media/making_life_multiplanetary_transcript_2017.pdf">2017 TRANSCRIPT</a></li>
+                      <li><a class="dropdown-item" href="https://www.spacex.com/media/making_life_multiplanetary-2017.pdf">2017 PRESENTATION</a></li>
+                      <li><a class="dropdown-item" href="https://www.spacex.com/media/making_life_multiplanetary_2016.pdf">2016 PRESENTATION</a></li>
+                    </ul>
+                </div>
+                <div class="horizontal-lists" id="social-section">
+                    <ul>
+                        <li><a href="#">TWITTER</a></li>
+                        <li><A href="#">YOUTUBE</A></li>
+                        <li><A href="#">INSTAGRAM</A></li>
+                        <li><A href="#">FLICKR</A></li>
+                        <li><A href="#">LINKEDIN</A></li>
+                        <li><A href="#">PRIVACY POLICY</A></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

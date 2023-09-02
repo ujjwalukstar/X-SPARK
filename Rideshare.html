@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-SPARK</title>
+    <link rel="shortcut icon" type="image/x-icon" href="fevi.ico">
+    <!-- <link rel="stylesheet" href="rideshare.css"> -->
+    <!-- <link rel="stylesheet" href="rideshare.js"> -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-header {
+            background-image: url(https://images3.alphacoders.com/366/36647.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .first-heading {
+            text-align: center;
+            /* margin-left: 30vw; */
+            font-size: 4rem;
+            font-weight: 800;
+            color: white;
+            /* margin-right: 30vw; */
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: center;
+            /* margin-top: -5vh; */
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar ul li {
+            color: white;
+            list-style: none;
+            font-size: 1.4rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .unordered-list li {
+            display: inline-block;
+            margin-left: 35px;
+
+        }
+
+        .unordered-list {
+            list-style: none;
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 0.7px;
+            padding: 30px;
+            /* text-decoration: none; */
+        }
+
+        .unordered-list li a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+        }
+
+        .unordered-list li a:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .third-page {
+            background-image: url(https://westernnews.media.clients.ellingtoncms.com/img/photos/2018/01/02/spacex_launch_01.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -5.4vh;
+        }
+
+        .third-page div h1 {
+            font-size: 4rem;
+            color: white;
+            padding-left: 6vw;
+            padding-right: 50vw;
+        }
+
+        .third-page div p {
+            padding-right: 49vw;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            color: white;
+            padding-left: 6vw;
+        }
+
+        .user:hover {
+            background-color: black;
+            transition-delay: 0.2s;
+        }
+
+        .fourth-page {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .fourth-page h2 .firstspan {
+            margin-left: 25vw;
+        }
+
+        .fourth-page img {
+            padding-left: 10vw;
+            padding-top: 11vh;
+        }
+
+        .fourth-page h1 {
+            font-size: 5rem;
+            color: white;
+            margin-left: 50vw;
+            margin-top: -80vh;
+        }
+
+        .fourth-page p {
+            color: white;
+            font-size: 2rem;
+            margin-left: 50vw;
+            margin-right: 4vw;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+
+        .fourth-page h2 {
+            color: white;
+            margin-left: 49.9vw;
+            margin-top: 10vh;
+        }
+
+        .fifth-page {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            margin-top: -3.8vh;
+        }
+
+        .fifth-page img {
+            height: 500px;
+            width: 400px;
+            margin-top: -4vh;
+            /* margin-left: 40vw;
+    margin-top: 6vh; */
+        }
+
+        .fifth-page h1 {
+            color: white;
+
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding-top: 4vh;
+            padding-left: 4vw;
+            font-size: 1.4rem;
+            padding-bottom: 2vh;
+            margin-left: 4vw;
+
+        }
+
+        .fifth-page p {
+            color: white;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            margin-right: 60vw;
+            padding-left: 4vw;
+            font-weight: 110;
+        }
+
+        .fifth-page img {
+            margin-left: 60vw;
+            margin-top: -25vh;
+        }
+
+        .fifth-page h1 .secondspan {
+            margin-left: 10vw;
+        }
+
+        .sixth-page {
+            background-color: black;
+            height: 20vh;
+            width: 100vw;
+            margin-top: -4vh;
+        }
+
+        @media (max-width:810px) {
+            .first-heading {
+                text-align: center;
+                /* margin-left: 30vw; */
+                font-size: 2rem;
+                font-weight: 800;
+                color: white;
+                /* margin-right: 30vw; */
+            }
+        }
+
+        @media (max-width:450px) {
+            .first-heading {
+                text-align: center;
+                /* margin-left: 30vw; */
+                font-size: 1rem;
+                font-weight: 800;
+                color: white;
+                /* margin-right: 30vw; */
+            }
+        }
+
+        @media (max-width:1140px) {
+            .third-page div p {
+                padding-right: 20vw;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                line-height: 1;
+                color: white;
+                padding-left: 2vw;
+
+            }
+        }
+
+        @media (max-width:1350px) {
+
+            /* .fourth-page .firstspan{
+        margin-left: 10vw;
+    } */
+            .fourth-page img {
+                padding-left: 2vw;
+                padding-top: 11vh;
+            }
+
+            .fourth-page h2 .firstspan {
+                margin-left: 5vw;
+            }
+
+            .fourth-page h1 {
+                font-size: 1.4rem;
+                color: white;
+                margin-left: 20vw;
+                margin-top: -80vh;
+            }
+
+            .fourth-page p {
+                color: white;
+                font-size: 1rem;
+                margin-left: 20vw;
+                margin-right: 4vw;
+
+                /* line-height: 1; */
+                /* letter-spacing: 1px; */
+            }
+
+            .fourth-page h2 {
+                color: white;
+                margin-left: 20vw;
+                margin-top: 10vh;
+            }
+        }
+
+        @media (max-width:1270px) {
+            .fifth-page img {
+                height: 500px;
+                width: 400px;
+                margin-top: -4vh;
+                /* margin-left: 40vw;
+        margin-top: 6vh; */
+            }
+
+            .fifth-page h1 {
+                color: white;
+
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding-top: 4vh;
+                padding-left: 4vw;
+                font-size: 1.4rem;
+                padding-bottom: 2vh;
+                margin-left: 4vw;
+
+            }
+
+            .fifth-page p {
+                color: white;
+                font-size: 1.2rem;
+                /* letter-spacing: 1px; */
+                /* line-height: 1.2; */
+                margin-right: 60vw;
+                padding-left: 4vw;
+                font-weight: 110;
+            }
+
+            .fifth-page img {
+                margin-left: 50vw;
+                margin-top: -25vh;
+            }
+
+            .fifth-page h1 .secondspan {
+                margin-left: 3vw;
+            }
+        }
+
+        @media (max-width:1500px) {
+            #navbar ul {
+                display: flex;
+
+            }
+
+            #navbar ul li {
+                color: white;
+                list-style: none;
+                font-size: 1.2rem;
+            }
+
+            #navbar ul li a {
+                color: white;
+                display: block;
+                padding: 3px 13px;
+                border-radius: 20px;
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width:1170px) {
+            #navbar ul {
+                display: flex;
+
+            }
+
+            #navbar ul li {
+                color: white;
+                list-style: none;
+                font-size: 0.7rem;
+            }
+
+            #navbar ul li a {
+                color: white;
+                display: block;
+                padding: 3px 7px;
+                border-radius: 20px;
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width:900px) {
+            #navbar ul {
+                display: flex;
+
+            }
+
+            #navbar ul li {
+                color: white;
+                list-style: none;
+                font-size: 0.6rem;
+            }
+
+            #navbar ul li a {
+                color: white;
+                display: block;
+                padding: 1px 2px;
+                border-radius: 20px;
+                text-decoration: none;
+            }
+        }
+    </style>
+
+<body>
+
+    <!-- <script>
+       var intro = "Welcome to X-SPARK Project";
+       function a(){
+           alert(intro);
+       }
+       a();
+    </script> -->
+    <header>
+        <div class="main-header">
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="Falcon9.html">FALCON 9</a>
+
+                    </li>
+                    <li>
+                        <a href="Falcon_Heavy.html">FALCON HEAVY</a>
+                    </li>
+                    <li>
+                        <a href="dragon.html">DRAGON</a>
+                    </li>
+                    <li>
+                        <a href="starship.html">STARSHIP</a>
+                    </li>
+                    <li>
+                        <a href="human_spacelight.html">HUMAN SPACELIGHT</a>
+                    </li>
+                    <li>
+                        <a href="#">RIDESHARE</a>
+                    </li>
+                    <li>
+                        <a href="year2008.html">MISSIONS</a>
+                    </li>
+                    <li>
+                        <a href="Facilities.html">FACILITIES</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="first-heading">
+                <h1>SMALLEST RIDESHARE PROGRAM</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="rideshareimg.png" alt="">
+        <div class="third-page">
+            <div>
+                <h1>RESERVE YOUR RIDE ONLINE</h1>
+                <p>
+                    Find all the information you need to make a reservation online, everything from port size to
+                    technical specifications to licensing information. Once your reservation request is approved, SpaceX
+                    will provide you with a welcome package outlining next steps for launch.
+                </p>
+                <p>
+                    Payloads are received at the launch site around L-30 and processed in a SpaceX facility. More
+                    details can be found in the Rideshare User’s Guide.
+                </p>
+            </div>
+
+        </div>
+        <div class="fourth-page">
+            <img src="rideshare2.png" alt="">
+            <h1>
+                PAYLOAD CONFIGURATIONS
+            </h1>
+            <p>
+                Book your ride on 15” or 24” ESPA class ports. For larger spacecraft, custom configurations and a top
+                slot are available upon request. Contact us directly for payloads that are too small for a 15” port.
+            </p>
+            <h2 style="border-bottom: 2px solid lightgrey;padding-bottom: 4vh;position: absolute;margin-top: 0px;">
+                15" PORT MASS <span class="firstspan">454 Kg <span style="margin-left: 10px;color: grey;">/ 1000
+                        lb</span></span>
+            </h2>
+            <h2 style="border-bottom: 2px solid lightgrey;padding-bottom: 4vh;position: absolute;">
+                24" PORT MASS <span class="firstspan">830 Kg <span style="margin-left: 10px;color: grey;">/ 1830
+                        lb</span></span>
+            </h2>
+        </div>
+        <div class="fifth-page">
+            <h1>
+                FALCON 9
+            </h1>
+            <p>
+                Falcon 9, the world’s first orbital Falcon 9, the world’s first orbital class reusable rocket, is
+                manufactured and operated by SpaceX for the reliable and safe transport of people and payloads to Earth
+                orbit and beyond. </p>
+            <p><a style="color: white;text-decoration: none;font-family: sans-serif;" href="Falcon9.html">Learn more
+                    about falcon 9 ></a></p>
+            <!-- <img src="falcon9rideshare.jpg" alt=""> -->
+            <h1 style="border-bottom: 2px solid lightgrey;position: absolute;padding-left: 0px;">
+                VEHICLE HEIGHT <span class="secondspan">70 m <span style="margin-left: 5px;color: grey;">/ 229.6
+                        ft</span></span>
+            </h1>
+
+            <h1 style="padding-top: 15vh;border-bottom: 2px solid grey;position: absolute;padding-left: 0px;">
+                VEHICLE DIAMETER <span class="secondspan">3.7 m <span style="margin-left: 5px;color: grey;">/ 12
+                        ft</span>
+                </span>
+            </h1>
+
+            <h1 style="padding-top: 25vh;border-bottom: 2px solid grey;position: absolute;padding-left: 0px;">
+                FAIRING HEIGHT <span class="secondspan">13.1 m <span style="margin-left: 5px;color: grey;">/ 43
+                        ft</span></span>
+            </h1>
+
+            <h1 style="padding-top: 35vh;border-bottom: 2px solid grey;position: absolute;padding-left: 0px;">
+                FAIRING DIAMETER <span class="secondspan">5.2 m <span style="margin-left: 5px;color: grey;">/17.1
+                        ft</span></span>
+            </h1>
+            <img src="https://blogs.nasa.gov/commercialcrew/wp-content/uploads/sites/230/2020/05/KSC-20200429-PH-SPX01_0002_large.jpg"
+                alt="">
+
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-SPARK</title>
+    <link rel="shortcut icon" type="image/x-icon" href="fevi.ico">
+    <script src="https://kit.fontawesome.com/15995cc399.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+margin:0px;
+padding: 0px;
+background-color: black;
+
+}
+.main-header{
+height: 100vh;
+width: 100vw;
+background-image: url(https://cdn.wallpapersafari.com/4/60/VRzMTJ.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top;
+background-attachment: fixed;
+/* opacity: 0.9; */
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.unordered-list li{
+display: inline-block;
+margin-left: 35px;
+
+
+
+}
+.unordered-list{
+list-style: none;
+text-align: center;
+font-size: 1.5rem;
+letter-spacing: 0.7px;
+padding: 30px;
+
+/* text-decoration: none; */
+}
+.unordered-list li a{
+text-decoration: none;
+list-style: none;
+color: white;
+}
+.unordered-list li  a:hover{
+color: grey;
+text-decoration: underline;
+}
+.title{
+margin-top: 40vh;
+text-align: center;
+font-size: 4rem;
+color: white;
+letter-spacing: 1px;
+font-weight: 900;
+}
+.title2{
+margin-top: -11vh;
+text-align: center;
+font-size: 1.4rem;
+color: white;
+letter-spacing: 1px;
+font-weight: 110;
+
+}
+#page-2{
+height: 80vh;
+width: 100vw;
+margin-top: -2.3vh;
+background-color: black;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+/* justify-content: space-around; */
+
+}
+#page-2 div p{
+    font-size: 1.8rem;
+    margin-left: 0.4vw; 
+    margin-top: -10vh;
+    color: white;
+}
+#page-2 div{
+display: inline-block;
+margin-left: 10vw;
+margin-top: 10vh;
+font-size: 7rem;
+padding-left: 5vw;
+font-weight: 330;
+}
+#page-2 div div{
+display: inline-block;
+margin-top: 4px;
+font-size: 1.4rem;
+margin-left: 2vw;
+}
+.third-page{
+background-color: black;
+width: 100vw;
+height: 100vh;
+
+}
+.third-page img{
+margin-left: 60vw;
+}
+.third-page h1{
+font-size: 2rem;
+line-height: 1.6;
+margin-right: 50vw;
+margin-left: 3vw;
+color: white;
+margin-top: -75vh;
+letter-spacing: 2px;
+font-weight: 170;
+}
+.fourth-page{
+background-image: url(https://spaceflight101.com/falcon-9-paz/wp-content/uploads/2018/03/PAZlaunch.jpg);
+height: 100vh;
+width: 100vw;
+margin-top: -3.5vw;
+/* background-image: url(https://cdn.wallpapersafari.com/4/60/VRzMTJ.jpg); */
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.fourth-page h1{
+color: white;
+padding-top: 10px;
+margin-left: 7vw;
+font-weight: 110;
+}
+.fourth-page h2{
+font-size: 3rem;
+font-weight:700;
+color: white;
+margin-left: 6vw;
+}
+.fourth-page h3{
+    margin-left: 6vw;
+    font-size: 4rem;
+    color: white;
+    font-weight: 110;
+    padding-top: 10px;
+}
+.fourth-page div{
+line-height: 1.6;
+/* border-bottom: 2px solid white; */
+/* position: absolute; */
+margin-left: -10px;
+
+}
+.fifth-page{
+height: 100vh;
+width: 100vw;
+background-image: url(https://s.yimg.com/uu/api/res/1.2/ZBhVuhWIoAFMGswUFf9oPQ--~B/aD0yMDAwO3c9MzAwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/popular_mechanics_642/61fb98b7c20608ab907f5026a44b3237);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.fifth-page h1{
+    color: white;
+    font-size: 4rem;
+    
+}
+.fifth-page div{
+padding-top: 25vh;
+color: white;
+padding-left: 10vw;
+font-weight: lighter;
+letter-spacing: 1px;
+
+}
+.fifth-page div h2{
+font-size: 5rem;
+padding-left: -2.4vw;
+padding-right: 62vw;
+margin-top: -4vh;
+}
+.fifth-page div a{
+padding-left: 40vw;
+font-size: 3rem;
+color: grey;
+}
+.sixth-page{
+height: 100vh;
+width: 100vw;
+background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ccfcd81100765.5cf53cee5ccc8.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.sixth-page div{
+color: white;
+padding-top: 10vh;
+/* margin-left: 18px; */
+padding-left: 6vw;
+font-weight: 110;
+
+}
+.sixth-page div h2{
+font-size: 3rem;
+font-weight:700;
+color: white;
+font-size: 4rem;
+}
+.six-p{
+padding-top: 6vh;
+padding-right: 60vw;
+font-weight: 110;
+letter-spacing: 1px;
+line-height: 1.3;
+}
+.seventh-page{
+    background-color: black;
+    height: 20vh;
+    width: 100vw;
+    margin-top: -3vh;
+}
+@media (max-width:1300px) {
+
+/* .sixth-page{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ccfcd81100765.5cf53cee5ccc8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+.sixth-page div{
+    color: white;
+    padding-top: 5vh;
+    /* margin-left: 18px; */
+    /* padding-left: 6vw; */
+    font-weight: 110;
+    width: 100vw;
+
+}
+.sixth-page div h2{
+    font-weight:500;
+    color: white;
+    font-size: 1.5rem;
+}
+.six-p{
+    padding-top: 3vh;
+    /* padding-right: 60vw; */
+    font-weight: 110;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+/* #page-2{
+    height: 80vh;
+    width: 100vw;
+    margin-top: -2.3vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+    
+    } */
+}
+
+@media (max-width:1390px){
+    #page-2 div{
+        display: inline-block;
+        margin-left:2vw;
+        margin-top: 10vh;
+        font-size: 6.5rem;
+        padding-left: 3vw;
+        font-weight: 330;
+        }
+        #page-2 div div{
+        display: inline-block;
+        margin-top: 14px;
+        font-size: 1rem;
+        margin-left: 1vw;
+        }
+        
+        
+@media (max-width:780px){
+    #page-2 div{
+        display: inline-block;
+        margin-left:2vw;
+        margin-top: 10vh;
+        font-size: 4.5rem;
+        padding-left: 2vw;
+        font-weight: 330;
+        }
+        #page-2 div div{
+        display: inline-block;
+        margin-top: 14px;
+        font-size: 1rem;
+        margin-left: 1vw;
+        }
+}
+@media (max-width:520px){
+    #page-2 div{
+        display: inline-block;
+        margin-left:0.3vw;
+        margin-top: 10vh;
+        font-size: 1.2rem;
+        padding-left: 13px;
+        font-weight: 170;
+        width: 10vw;
+        }
+        #page-2 div div{
+        display: inline-block;
+        margin-top: 14px;
+        font-size: 1px;
+        margin-left: 5px;
+        }
+        #page-2 div p{
+            font-size: 0.7rem;
+        }
+}
+@media (max-width:1500px) {
+    #navbar{
+        display: inline-block;
+        
+        /* justify-content: center; */
+    }
+    .title{
+        margin-top: 40vh;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 900;
+        }
+        .title2{
+        margin-top: -3vh;
+        text-align: center;
+        font-size: 0.8rem;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 110;
+        
+        }
+        #navbar ul{
+            display: flex;
+            
+        }
+        #navbar ul li{
+            color: white;
+            list-style: none;
+            font-size: 1.2rem;
+        }
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 3px 13px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+}
+    
+@media (max-width:1170px) {
+    #navbar ul{
+        display: flex;
+        
+    }
+    #navbar ul li{
+        color: white;
+        list-style: none;
+        font-size: 0.7rem;
+    }
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 7px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+}}
+@media (max-width:900px){
+    #navbar ul{
+        display: flex;
+        
+    }
+    #navbar ul li{
+        color: white;
+        list-style: none;
+        font-size: 0.6rem;
+    }
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 1px 2px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    .title{
+        margin-top: 40vh;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 900;
+        }
+        .title2{
+        margin-top: -3vh;
+        text-align: center;
+        font-size: 0.4rem;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 110;
+        
+        }
+}
+@media (max-width:740px){
+    
+        .third-page img{
+        margin-left: 60vw;
+        }
+        .third-page h1{
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-right:40vw;
+        margin-left: 3vw;
+        color: white;
+        margin-top: -75vh;
+        letter-spacing: 2px;
+        font-weight: 170;
+        }
+        .fourth-page div h1{
+            font-size: 0.9rem;
+        }
+        .fifth-page div h1{
+            font-size: 2rem;
+        }
+        .fifth-page div h2{
+            font-size: 1.7rem ;
+        }
+        .unordered-list li{
+            display: inline-block;
+            margin-left: 5px;
+            
+            }
+            .unordered-list{
+            list-style: none;
+            text-align: center;
+            font-size: 0.7rem;
+            /* letter-spacing: 0.7px; */
+            padding: 5px;
+        
+            /* text-decoration: none; */
+            }
+}
+
+    </style>
+    
+    
+
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="#">FALCON 9</a>
+
+                    </li>
+                    <li>
+                        <a href="Falcon_Heavy.html">FALCON HEAVY</a>
+                    </li>
+                    <li>
+                        <a href="dragon.html">DRAGON</a>
+                    </li>
+                    <li>
+                        <a href="starship.html">STARSHIP</a>
+                    </li>
+                    <li>
+                        <a href="human_spacelight.html">HUMAN SPACELIGHT</a>
+                    </li>
+                    <li>
+                        <a href="rideshare.html">RIDESHARE</a>
+                    </li>
+                    <li>
+                        <a href="year2008.html">MISSIONS</a>
+                    </li>
+                    <li>
+                        <a href="Facilities.html">FACILITIES</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="title">
+
+                <h1>FALCON 9</h1>
+                
+            </div>
+            <div class="title2">
+                <h1>FIRST ORBITAL CLASS ROCKET CAPABLE OF REFLIGHT</h1>
+        </div>
+    </header>
+    <main>
+        <div id="page-2">
+                <div>
+                   <h1 style="color: white;"> 96 </h1>
+                   <p >Total Launches</p>
+                </div>
+                <div>
+                    <h1 style="color: white;">  75</h1>
+                    <p>Total Landing</p>
+                </div>
+                <div>
+                    <h1 style="color: white;">26</h1>
+                    <p>Reflown Rockets</p>
+                </div>
+                
+                    
+            
+        </div>
+        <div class="third-page">
+            <div>
+                <img src="blueprint.png" alt="">
+            </div>
+            <div>
+                <h1>
+                    Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
+                </h1>
+            </div>
+        </div>
+        <div class="fourth-page">
+            <h3>FALCON 9</h1>
+            <h2>
+                OVERVIEW
+            </h2>
+            <div>
+                <h1 style="border-bottom: 2px solid white;position: absolute;">
+
+                    HEIGHT <span style="margin-left: 17vw;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;70 m <span style="margin-left: 0px;color: grey;font-weight: 500;">/ 229.6ft</span></span></h1></div>
+                <div style="margin-top: 10vh;"> 
+                    <h1 style="border-bottom: 2px solid white;position: absolute;">DIAMETER <span style="margin-left: 15vw;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;3.7 m <span style="margin-left: 0px;color: grey;font-weight: 500;">/ 12ft</span></span></h1>
+                </div>
+                <div style="margin-top: 16vh;">
+                    <h1 style="border-bottom: 2px solid white;position: absolute;">MASS <span style="margin-left: 19vw;" >549,054 Kg <span style="margin-left: 0px;color: grey
+                    ;font-weight: 500;">/ 1,207,920 lb</span></span></h1>
+                
+                </div>
+                <div style="margin-top: 22vh;">
+                    <h1 style="border-bottom: 2px solid white;position: absolute;">PAYLOAD TO LEO <span style="margin-left: 9.5vw;"></span>&ensp;&ensp;&ensp;&ensp;22,800 Kg<span style="margin-left: 0px;color: grey;font-weight: 500;">/ 50,265 lb</span></span></h1> 
+                </div>
+                 
+                <div style="margin-top: 28vh;">
+                    <h1 style="border-bottom: 2px solid white;position: absolute;">PAYLOAD TO GTO<span style="margin-left: 9.5vw;">&ensp;&ensp;&ensp;&ensp;&nbsp; 8,300 Kg <span style="margin-left: 0px;color: grey;font-weight: 500;">/ 18,300 lb</span></span></h1>
+                </div>
+                <div style="margin-top: 34vh;">
+                    <h1 style="border-bottom: 2px solid white;position: absolute;">PAYLOAD TO MARS<span style="margin-left: 8.5vw;">&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;4,020 Kg<span style="margin-left: 0px;color: grey;font-weight: 500;">/ 8,860 lb</span></span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="fifth-page">
+            <div>
+                <h1>VIDEO</h1>
+
+                <a href="https://youtu.be/Z4TXCZG_NEY" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+            
+                <h2>
+                    FALCON 9 IN FLIGHT
+                </h2>
+            </div>
+        </div>
+        <div class="sixth-page">
+            <div>
+                <h1>
+                    ENGINE
+                </h1>
+                <h2>
+                    MERLIN
+                </h2>
+                <h3 style="color: white;margin-top: 1.5vh;">
+                    <span style="font-size: 2rem;padding-right: 2vw;"> SEA LEVEL</span> <span style="font-size: 2rem;padding-right: 2vw;">|</span> <span style="font-size: 2rem;color: lightgray;">VACCUM</span>
+                </h3>
+                <h1 class="six-p">
+                    Merlin is a family of rocket engines developed by SpaceX for use on its Falcon 1, Falcon 9 and Falcon Heavy launch vehicles. Merlin engines use a rocket grade kerosene (RP-1) and liquid oxygen as rocket propellants in a gas-generator power cycle. The Merlin engine was originally designed for recovery and reuse.
+                </h1>
+            </div>
+        </div>
+        <div class="seventh-page">
+            <nav>
+                <ul class="unordered-list text-centre" style="padding-top: 7vh;">
+                    <li style="color: white;">
+                        X-SPARK 2021
+                    </li>
+                    <li>
+                        <a href="">TWITTER</a>
+    
+                    </li>
+                    <li>
+                        <a href="">YOUTUBE</a>
+                    </li>
+                    <li>
+                        <a href="">INSTAGRAM</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">LINKEDIN</a>
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+
+        
+    </main>
+</body>
+</html>

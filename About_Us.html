@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="fevi.ico">
+        <style>
+            
+            body{
+                background-image: url(aboutus.jpeg);
+                /* background-color: black; */
+                
+                background-attachment: fixed; 
+                font-family: "poppins";
+                background-position: center;
+                background-size: cover;
+               /* background-repeat: no-repeat;*/
+            }
+             
+            .container{
+                height: 100vh;
+                width: auto;
+                margin: 20px 40px;
+                color: floralwhite;
+            }
+
+            .heading{
+                text-align: center;
+                font-size: 60px;
+                color: cornsilk;
+                font-weight: 700;
+            }
+
+            .profiles{
+                display: flex;
+                position: relative;
+                top: 5%;
+                justify-content: space-around;
+                margin: 20px 80px;
+            }
+
+            .profile{
+                flex-basis: 260px;
+                text-align: center;
+                color: whitesmoke;
+                position: relative;
+                border-radius: 20px;
+            }
+
+            .profile .profile-img{
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-left: 20px;
+                margin-right: 30px;
+                display: flex;
+                justify-content: center;
+                padding: 4px;
+                margin-top: 25px;
+                background: silver;
+            }
+
+            .user-name{
+                letter-spacing: 1px;
+                margin-top: 2px;
+                font-size: 3.5rem;
+                color: #f17a24;
+                z-index: 1;
+            }
+            .user-id{
+                letter-spacing: 1px;
+                font-size: 1.4rem;
+                font-weight: 110;
+                
+            }
+
+            .profile h5{
+                font-size: 2rem;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: floralwhite;
+            }
+
+            @media only screen and (max-width: 1150px){
+                 
+                .profiles{
+                    flex-direction: column;
+
+                }
+                .profile{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            
+             
+        </style>
+    </head>
+    <body >
+        <div class="container" >
+            <h1 class="heading"><u>Our Team</u></h1>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="jod.jpeg" class="profile-img">
+                    
+                    <h3 class="user-name">Sidhant</h3>
+                    <h5>Designer</h5>
+                    <h6 class="user-id">sidhant1841.be21@chitkara.edu.in</h6>
+                </div>
+                <div class="profile">
+                    <img src="sp1.jpeg" class="profile-img">
+                    
+                    <h3 class="user-name">Shreyansh</h3>
+                    <h5>Designer</h5>
+                    <h6 class="user-id">shreyansh1837.be21@chitkara.edu.in</h6>
+                </div>
+                <div class="profile">
+                    <img src= "mauryaa.jpeg" class="profile-img">
+                    
+                    <h3 class="user-name">Mauryaa</h3>
+                    <h5>Front end developer</h5>
+                    <h6 class="user-id">mauryaa1758.be21@chitkara.edu.in</h6>
+                </div>
+                <div class="profile">
+                    <img src= "ujjwal.jpg" class="profile-img">
+                    
+                    <h3 class="user-name">Ujjwal</h3>
+                    <h5>Front end developer</h5>
+                    <h6 class="user-id">ujjwal1860.be21@chitkara.edu.in</h>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html

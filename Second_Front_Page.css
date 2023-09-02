@@ -1,0 +1,193 @@
+body{
+    /* padding: 0px; */
+    margin: 0px;
+}
+.main-header{
+    background-image: url(https://images6.alphacoders.com/104/thumb-1920-1041418.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    /* background-attachment: fixed; */
+    margin-top: -3vh;
+}
+.logo{
+    font-size: 2rem;
+    /* letter-spacing: 1px; */
+    color: cyan;
+    padding-top: 4vh;
+    padding-left: 3vw;
+    
+}
+.unordered-list li{
+    display: inline-block;
+    margin-left: 35px;
+    
+    
+}
+.unordered-list{
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.7px;
+    padding: 30px;
+    margin-top: -6vh;
+    /* text-decoration: none; */
+}
+.unordered-list li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.unordered-list li  a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+.main-header h1{
+    margin-top: 30vh;
+    color: white;
+    margin-left: 5vw;
+    font-weight: 110;
+    font-size: 2.5rem;
+    /* letter-spacing: 1px; */
+}
+.main-header h2{
+    font-size: 4.5rem;
+    margin-left: 5vw;
+    margin-right: 60vw;
+    color: white;
+    margin-top: -1.3vh;
+}
+.main-header a input{
+    padding: 10px;
+    color: black;
+    /* background-color: rgba(0,0,0,0.5); */
+    position: relative;
+    
+    
+}
+.main-header .btn {
+    position: relative;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+.second-page{
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2018/02/13/liftoff-of-falcon-heavy-the-worlds-most-powerful-rocket-on-february-6-2018.-wallpaper_.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    margin-top: -3.9vh;
+}
+
+
+.second-page h1{
+    font-size: 3rem;
+    color: white;
+    padding-top: 50vh;
+    padding-left: 5vw;
+    font-weight: 110;
+}
+.second-page h2{
+    padding-left: 5vw;
+    font-size: 5.5rem;
+    color: white;
+    margin-right: 75vw;
+    margin-top: -2vh;
+}
+.second-page .btn{
+    position: relative;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+.third-page{
+    background-image: url(https://aboutspacejornal.net/wp-content/uploads/2021/09/%D0%B3%D0%B4%D1%88-8.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    margin-top: -3vh;
+}
+.third-page h1{
+    font-size: 2.4rem;
+    color: white;
+    margin-left: 5vw;
+    padding-top: 60vh;
+    font-weight: 110;
+}
+.third-page h2{
+    font-size: 5rem;
+    color: white;
+    margin-left: 5vw;
+    margin-right: 60vw;
+    margin-top: -1vh;
+}
+.third-page .btn{
+    position: relative;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+.fourth-page{
+    background-image: url(spacex2.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    margin-top: -3vh;
+    
+}
+.fourth-page h1{
+    font-size: 2.4rem;
+    color: white;
+    padding-top: 20vh;
+    margin-left: 5vw;
+    font-weight: 110;
+}
+.fourth-page h2{
+    color: white;
+    font-size: 4rem;
+    margin-left: 5vw;
+    margin-top: -1vh;
+    margin-right: 60vw;
+}
+.fourth-page .btn{
+    position: relative;
+    font-size: 2rem;
+    margin-left: 5vw;
+  
+}
+.fifth-page{
+    background-image: url(https://cdn.shopify.com/s/files/1/0173/8204/7844/articles/iHrCGU593wYRQ8F8Pr64CJ_db059b69-3f52-46d8-a8d6-38fa84ecc83a_1600x.jpg?v=1591660716);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    margin-top: -5.7vh;
+}
+.fifth-page h1{
+    color: white;
+    font-size: 4.5rem;
+    margin-left: 5vw;
+    margin-right: 55vw;
+    padding-top: 20vh;
+    font-weight: 550;
+}
+.fifth-page .btn{
+    position: relative;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+.sixth-page{
+    background-color: black;
+    height: 20vh;
+    width: 100vw;
+}
